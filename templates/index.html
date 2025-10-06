@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction</title>
+</head>
+<body>
+    <h2>Loan Prediction Form</h2>
+    <form action="/predict" method="post">
+        <label>Applicant Income:</label><br>
+        <input type="number" name="ApplicantIncome" required><br><br>
+
+        <label>Co-applicant Income:</label><br>
+        <input type="number" name="CoapplicantIncome" required><br><br>
+
+        <label>Loan Amount:</label><br>
+        <input type="number" name="LoanAmount" required><br><br>
+
+        <label>Loan Term (in months):</label><br>
+        <input type="number" name="Loan_Amount_Term" required><br><br>
+
+        <label>Credit History (1 = good, 0 = bad):</label><br>
+        <input type="number" name="Credit_History" min="0" max="1" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
